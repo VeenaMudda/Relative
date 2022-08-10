@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+@media (width:2000px) {
+    .bg-container {
+        background-color: #231c2e;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .purple-icon {
+        color: purple;
+        height: 10%;
+        margin-bottom: 8%;
+    }
+
+    .heading-container {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 10%;
+        align-items: center;
+        height: 10%;
+        justify-content: space-between;
+    }
+
+    .main-heading {
+        color: #ffffff;
+        font-family: "Roboto";
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 90%;
+        padding-left: 1%;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .card-container {
+        background-color: #ffffff20;
+        color: #fff;
+        position: relative;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 90%;
+        padding-bottom: 3%;
+        margin-top: 5%;
+        margin-right: 5%;
+    }
+
+    .half-circle {
+        width: 50%;
+        height: 20%;
+        position: absolute;
+        left: 50%;
+        top: -1px;
+        transform: translateX(-50%);
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        background-color: #231c2e;
+    }
+
+    .half-circle .active:before,
+    .half-circle .active:after {
+        content: "";
+    }
+
+
+    .half-circle:before {
+        position: absolute;
+        top: -5%;
+        content: "";
+        background-color: #231c2e;
+        width: 25%;
+        height: 51%;
+        border-width: 0px;
+        left: -23%;
+    }
+
+    .half-circle:after {
+        position: absolute;
+        top: 2%;
+        content: "";
+        background-color: #fff2;
+        width: 19%;
+        height: 47%;
+        border-width: 0px;
+        right: -16.8%;
+        border-top-left-radius: 100px;
+    }
+
+    .half-circle .active:before,
+    .half-circle .active:after {
+        position: absolute;
+        top: 1px;
+        content: "";
+        background-color: #fff2;
+        width: 25%;
+        height: 50%;
+        border-width: 0px;
+    }
+
+    .half-circle .active:before {
+        left: -23%;
+        top: 1%;
+        content: "";
+        background-color: #fff2;
+        width: 25%;
+        height: 45%;
+        border-width: 0px;
+        border-top-right-radius: 100px;
+    }
+
+    .half-circle .active:after {
+        position: absolute;
+        top: -1px;
+        content: "";
+        background-color: #231c2e;
+        width: 27%;
+        height: 50%;
+        border-width: 0px;
+        right: -20px;
+    }
+
+    .bg-circle {
+        height: 100%;
+        width: 70%;
+        position: absolute;
+        left: 50%;
+        top: -30%;
+        transform: translateX(-50%);
+        border-radius: 100px;
+        background-image: linear-gradient(to bottom, #ffffff20, #f9df1420);
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .white-icon {
+        color: #ffffff;
+        font-size: 200%;
+        background-color: #f9df14;
+        padding: 10%;
+        border-radius: 100px;
+        align-self: center;
+        width: 30%;
+        text-align: center;
+    }
+
+    .card-heading {
+        align-self: center;
+        margin-top: 40%;
+        color: #929293;
+        font-family: "Roboto";
+    }
+
+    .bitcoin {
+        background-color: #231c2e;
+        width: 80%;
+        height: 5%;
+        align-self: center;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: "Roboto";
+        padding: 5%;
+    }
+
+    .value {
+        align-self: center;
+    }
+
+    .value1 {
+        align-self: center;
+        padding-left: 20%;
+    }
+
+    .growth {
+        color: green;
+        font-weight: bold;
+        align-self: center;
+        justify-content: flex-end;
+    }
+
+    .heading {
+        align-self: center;
+        color: #929293;
+        font-family: "Roboto";
+    }
+
+    .pairs-container {
+        background-color: #231c2e;
+        align-self: center;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: "Roboto";
+        width: 30%;
+
+    }
+
+    .sol {
+        width: 20%;
+        height: 80%;
+        background-color: black;
+        border-radius: 100px;
+        align-self: center;
+        margin: 2%;
+    }
+
+    .eth {
+        width: 20%;
+        height: 80%;
+        background-color: white;
+        border-radius: 100px;
+        align-self: center;
+        margin: 2%;
+    }
+
+    .busd {
+        width: 20%;
+        height: 80%;
+        background-color: yellow;
+        border-radius: 100px;
+        align-self: center;
+        margin: 2%;
+    }
+
+    .cards {
+        display: flex;
+        height: 95%;
+    }
+
+    .bg-sol-circle {
+        height: 100%;
+        width: 70%;
+        position: absolute;
+        left: 50%;
+        top: -30%;
+        transform: translateX(-50%);
+        border-radius: 100px;
+        background-image: linear-gradient(to bottom, #ffffff20, #eb13ec20);
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .solana {
+        background-color: black;
+        border-radius: 100px;
+        width: 70%;
+        height: 70%;
+        align-self: center;
+    }
+
+    .shrink {
+        color: red;
+        font-weight: bold;
+        align-self: center;
+        justify-content: flex-end;
+        margin-right: 2%;
+    }
+
+    .btc {
+        width: 20%;
+        height: 80%;
+        border-radius: 100px;
+        align-self: center;
+        margin: 2%;
+        background-color: #f9df14;
+        text-align: center;
+        display: flex;
+        font-size: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ethereum {
+        background-color: white;
+        border-radius: 100px;
+        width: 70%;
+        height: 70%;
+        align-self: center;
+    }
+
+    .bg-eth-circle {
+        height: 100%;
+        width: 70%;
+        position: absolute;
+        left: 50%;
+        top: -30%;
+        transform: translateX(-50%);
+        border-radius: 100px;
+        background-image: linear-gradient(to bottom, #00000020, #ffffff20);
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .binance-usd {
+        background-color: yellow;
+        border-radius: 100px;
+        width: 70%;
+        height: 70%;
+        align-self: center;
+    }
+
+    .shiba-inu {
+        border-radius: 100px;
+        width: 70%;
+        height: 70%;
+        align-self: center;
+        background-color: red;
+    }
+
+    .bg-shiba-inu-circle {
+        height: 100%;
+        width: 70%;
+        position: absolute;
+        left: 50%;
+        top: -30%;
+        transform: translateX(-50%);
+        border-radius: 100px;
+        background-image: linear-gradient(to bottom, #00000020, #f9640620);
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+    }
+}
